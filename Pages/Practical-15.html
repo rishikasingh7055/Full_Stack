@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical-15</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            margin-top: 50px;
+            text-align: center;
+            background-color:violet;
+        }
+        h1{
+            margin-bottom: 50px;
+            color:red;
+            font-size: 40px;
+        }
+        button{
+            width: 50px;
+            height: 50px;
+            font-size: 25px;
+            background-color: yellow;
+        }
+        input{
+            display: inline;
+            margin-left: 50px;
+            margin-right: 50px;
+            font-size: 30px;
+            color:black;
+        }
+    </style>
+</head>
+<body>
+    <h1>COUNTER</h1>
+    
+        <button id= "decrement">-</button>
+        <input type="number" value="0">
+        <button id="increment">+</button>
+  
+        <script>
+           let btnIncrement =document.querySelector('#increment');
+           let btnDecrement =document.querySelector('#decrement');
+           let input = document.querySelector('input');
+            
+            btnIncrement.addEventListener('click',() => {input.value=parseInt(input.value)+1});
+            btnDecrement.addEventListener('click',() => {input.value=parseInt(input.value)-1});
+        </script>
+</body>
+</html>
